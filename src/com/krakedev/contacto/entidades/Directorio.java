@@ -13,4 +13,8 @@ public class Directorio {
 	public void setContactos(ArrayList<Contacto> contactos) {
 		this.contactos = contactos;
 	}
+	
+	public void agregarContacto(Contacto contacto) {
+		contactos.add(contacto);
+	}
 }
