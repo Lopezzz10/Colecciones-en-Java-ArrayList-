@@ -26,4 +26,7 @@ public class Directorio {
 		cantidad = contactos.size();
 		return cantidad;
 	}
+	public Contacto obtenerContacto(int posicion) {
+		return contactos.get(posicion);
+	}
 }
