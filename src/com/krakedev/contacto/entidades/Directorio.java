@@ -29,7 +29,7 @@ public class Directorio {
 	public Contacto obtenerContacto(int posicion) {
 		return contactos.get(posicion);
 	}
-	public void imprimirContacto() {
+	public void imprimirContactos() {
 		for(int i = 0;i < contactos.size(); i ++) {
 			Contacto contacto = contactos.get(i);
 			System.out.println("Nombre: "+contacto.getNombre());
