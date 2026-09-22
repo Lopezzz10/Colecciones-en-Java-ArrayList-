@@ -40,7 +40,7 @@ public class Directorio {
 		String numero = c.getCelular();		
 		return numero;
 	}
-	public Contacto buscarConctato (String numero) {
+	public Contacto buscarContacto (String numero) {
 		for(int i = 0; i < contactos.size(); i++) {
 			Contacto c =  contactos.get(i);
 			if(c.getCelular().equals(numero)) {
