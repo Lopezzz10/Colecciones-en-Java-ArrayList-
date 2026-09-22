@@ -35,4 +35,9 @@ public class Directorio {
 			System.out.println("Nombre: "+contacto.getNombre());
 		}
 	}
+	public String recuperarNumero(int posicion) {
+		Contacto c = contactos.get(posicion);
+		String numero = c.getCelular();		
+		return numero;
+	}
 }
