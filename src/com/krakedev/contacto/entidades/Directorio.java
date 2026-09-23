@@ -64,4 +64,14 @@ public class Directorio {
 			return true;
 		}
 	}
+	public ArrayList<Contacto> buscarContactosCoincidencia (String Subcadena){
+		ArrayList<Contacto> encontrados = new ArrayList<Contacto>();
+		for(int i = 0;  i < contactos.size();i++) {
+			Contacto c = contactos.get(i);
+			if(c.getNombre().startsWith(Subcadena)) {
+				encontrados.add(c);
+			}
+		}
+		return  encontrados;
+	}
 }
