@@ -46,19 +46,30 @@ public class Directorio {
 		String numero = c.getCelular();		
 		return numero;
 	}
+	
+//	public Contacto buscarContacto (String numero) {
+//		Contacto encontrado = null;
+//		for(int i = 0; i < contactos.size(); i++) {
+//			Contacto c =  contactos.get(i);
+//			if(c.getCelular().equals(numero)) {
+//				encontrado = c;
+//				break;
+//			}
+//		}
+//		return  encontrado;
+//	}
+	
 	public Contacto buscarContacto (String numero) {
-		Contacto encontrado = null;
-		for(int i = 0; i < contactos.size(); i++) {
-			System.out.println("_____________Nueva Busqueda_____________");
-			System.out.println("Posicion: "+i);
-			Contacto c =  contactos.get(i);
+		Contacto encontrado =  null;
+		for(Contacto c:contactos) {
 			if(c.getCelular().equals(numero)) {
 				encontrado = c;
 				break;
 			}
 		}
-		return  encontrado;
+		return encontrado;
 	}
+	
 	public boolean eliminarContacto (String numero) {
 		Contacto encontrado = buscarContacto(numero);
 		if(encontrado == null) {
